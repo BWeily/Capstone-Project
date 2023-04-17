@@ -1,32 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Checkout</title>
 <link type="text/css" rel="stylesheet"
 href="webdesign.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+crossorigin="anonymous">
+
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+/>
 
 <style type="text/css">
 </style>
 </head>
 
-<body>
+<body class="color1">
 
-    <h1 class="center">Checkout</h1>
+  <nav class="navbar bg-dark navbar-dark fixed-top">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div>
-        <div>
-    <a href="HomePage.html">Homepage</a>
-    <a href="Signup.html">Sign up or Login</a>
-    <img src="projectimages/Checkout.jpg" alt="Checkout"
-    title="Checkout" id="Checkout" style="width:200px" />
-        </div>
+    <h1 class="center" >Checkout</h1>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="HomePage.html" class="nav-link text-dark fw-bold">Homepage</a>
+        </li>
+        <li class="nav-item">
+          <a href="Signup.html" class="nav-link text-dark fw-bold">Login / Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a href="Staff.html" class="nav-link text-dark fw-bold">Our Staff</a>
+        </li>
+        <li class="nav-item">
+          <a href="Forgot.html" class="nav-link text-dark fw-bold">Forgot Password?</a>
+        </li>
+      </ul>
     </div>
+    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+</nav>
 
-    <p><h2>Shopping Cart:</h2></p>
-    
-    <div>
+    <div class="text-center">
+      <p></p>
+      <h2>Shopping Cart:</h2>
         <img src="projectimages/schoolsupplies.png" alt="schoolsupplies"
         title="schoolsupplies" id="schoolsupplies" style="width:200px" />
 
@@ -40,19 +70,49 @@ href="webdesign.css">
         title="boardgames" id="boardgames" style="width:200px" />
     </div>
 
+    <div class="text-center">
     <p><h4>Quantity:</h4>
         <input type="text" name="Quantity" placeholder="quantity"></p>
-    <p><h4>Price:</h4>
+    <p><h4>Prices:</h4>
         <input type="text" name="Price" placeholder="price"></p>
-
-    <p><input type="text" name="total" placeholder="total"></p>
-    
-        <div>
+        <p><input type="text" name="total" placeholder="total"></p>
+    </div>
+        <div class="text-center">
             <p><input type="checkbox" role="switch" id="protection">
             <label for="protection">Package Protection</label></p>
-        </div>
-    
-    <button type="button" id= "Checkout">Checkout</button>
+            <button type="button" id= "Checkout">Checkout</button>
+    </div>
+    <p></p>
+
+    <section class="color2 text-dark p-5 " >
+      <h3 class="text-center text-dark fw-bold mb-4">Sign Up For Our Newsletter</h3>
+          <div class="text-center mb-4">
+            <input type="text" placeholder="Email" />
+            <button class="btn btn-dark btn-lg" type="button">Submit</button>
+            <p></p>
+           <h3 class="text-center text-dark fw-bold ">Contact Info</h3>
+           <li class="color2">
+              <span class="fw-bold">Phone:</span>  <span class="text-light"> (123)-456-7890 </span>
+                  </li>
+                  <li class="color2">
+               <span class="fw-bold">Email:</span>
+               <span class="text-light"> student@student.students </span>
+                  </li>
+                  <li class="color2">
+                  <span class="fw-bold">Main Address:</span>  <span class="text-light"> 123 Main St </span>
+                </li>
+          </div>
+  </section>
+
+    <footer class="bg-dark text-white text-center fixed-bottom">
+    Copyright &copy; 2022 Brayden Weilandt
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
 
 </body>
 </html>

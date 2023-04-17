@@ -1,38 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Homepage</title>
 
 <link type="text/css" rel="stylesheet"
 href="webdesign.css">
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+crossorigin="anonymous">
+
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+/>
+
 <style type="text/css">
 </style></head>
 
-<body>
-<h1 class="center" >Home</h1>
+<body class="color1">
 
-<input type="text" name="SearchBar" value="search">
+  <nav class="navbar bg-dark navbar-dark fixed-top">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<div>
-    <div>
-<a href="Signup.html">Signup</a>
-<a href="Checkout.html">Checkout</a>
-<img src="projectimages/addtocart.gif" alt="AddtoCart"
-title="AddtoCart" id="AddtoCart" style="width:150px" />
+    <h1 class="center" >Home Page</h1>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="Signup.html" class="nav-link text-dark fw-bold">Login / Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a href="Checkout.html" class="nav-link text-dark fw-bold">Checkout</a>
+        </li>
+        <li class="nav-item">
+          <a href="Staff.html" class="nav-link text-dark fw-bold">Our Staff</a>
+        </li>
+        <li class="nav-item">
+          <a href="Forgot.html" class="nav-link text-dark fw-bold">Forgot Password?</a>
+        </li>
+      </ul>
     </div>
-</div>
+    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+</nav>
 
-<body>
+    <section class=" bg-dark text-sm-start text-center">
+      <h3 class="text-light text-center">Become a<span class="text-warning"> Team Member </span> Today!</h3>
+      <div class="container text-center mb-4" >
+        <div class="center">
+            <button
+              class="btn btn-primary btn-md fw-bold"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll">
+              Start Now By Signing Up Here
+            </button>
+              </div>
+              </div>
+              <div class="center">
+              <img src="projectimages/Teamwork.png" alt="teamwork"
+              title="teamwork" id="teamwork" width="225px" />
+            </div>
+            <p></p>
+    </section>
 
+    <div class="text-center mb-4">
     <h2>Products:</h2>
+    <input type="text" name="SearchBar" value="search">
+    <p></p>
     <p>
     <img src="projectimages/Food.jpg" alt="Food"
-    title="Food" id="Food" style="width:500px" />
+    title="Food" id="Food" style="width: 250px;" />
     <img src="projectimages/Supplies.jpg" alt="Supplies"
-    title="Supplies" id="Supplies" style="width:660px" /></p>
+    title="Supplies" id="Supplies" style="width:300px" />    
+    <img src="projectimages/Cart.jpg" alt="Cart"
+    title="Cart" id="Cart" style="width: 200px;" /></p>
     <button type="button" id= "addtocart">Add to Cart</button>
+  </div>
+
+
+  <section class="color2 text-dark p-5 " >
+    <h3 class="text-center text-dark fw-bold mb-4">Sign Up For Our Newsletter</h3>
+        <div class="text-center mb-4">
+          <input type="text" placeholder="Email" />
+          <button class="btn btn-dark btn-lg" type="button">Submit</button>
+          <p></p>
+         <h3 class="text-center text-dark fw-bold ">Contact Info</h3>
+         <li class="color2">
+            <span class="fw-bold">Phone:</span>  <span class="text-light"> (123)-456-7890 </span>
+                </li>
+                <li class="color2">
+             <span class="fw-bold">Email:</span>
+             <span class="text-light"> student@student.students </span>
+                </li>
+                <li class="color2">
+                <span class="fw-bold">Main Address:</span>  <span class="text-light"> 123 Main St </span>
+              </li>
+        </div>
+</section>
+
+    <footer class="bg-dark text-white text-center fixed-bottom">
+    Copyright &copy; 2022 Brayden Weilandt
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
 </body>
 </html>
